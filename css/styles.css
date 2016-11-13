@@ -1,0 +1,41 @@
+#home-row{
+	margin-top:50px;
+	display:block;
+	border: 2px solid green;
+	min-height:590px;
+}
+
+
+#offer-row{
+	display:block;
+	border: 2px solid red;
+	min-height:400px;
+}
+
+#gallery-row{
+	display:block;
+	border: 2px solid blue;
+	min-height:100px;
+}
+
+#aboutUs-row{
+	display:block;
+	border: 2px solid yellow;
+	min-height:100px;
+}
+		  
+#contact-row{
+	display:block;
+	border: 2px solid black;
+	min-height:100px;
+}
+#map{
+	display:block;
+	border: 2px solid orange;
+	min-height:300px;
+}
+#contact{
+	display:block;
+	border: 2px solid red;
+	min-height:400px;
+}
