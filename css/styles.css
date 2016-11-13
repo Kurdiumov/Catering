@@ -1,10 +1,9 @@
 #home-row{
 	margin-top:50px;
 	display:block;
-	border: 2px solid green;
 	min-height:590px;
+	background-image: url('../img/home.gif');
 }
-
 
 #offer-row{
 	display:block;
@@ -22,6 +21,7 @@
 	display:block;
 	border: 2px solid yellow;
 	min-height:100px;
+	background-color: #eee;
 }
 		  
 #contact-row{
@@ -58,4 +58,35 @@
 #contact a{
 	text-decoration: none;
 	color:#333;
+}
+
+h1{
+	text-align: center;
+	font-family: GaramondPremrPro-BdSubh;
+	font-size: 50px;
+	color: #303539;
+}
+
+.description{
+	font-family: GothamPro;
+	font-size: 22px;
+	color: #303539;
+	padding: 29px 0 53px;
+	line-height: 34px;
+	letter-spacing: -.6px
+}
+
+.managerName{
+	font-family: Noteworthy-Light;
+	font-size: 30px;
+	color: #303539;
+	padding: 133px 100 22px;
+	margin-top:50px;
+}
+
+.rank{
+	font-family: GothamPro;
+	font-size: 16px;
+	color: #303539;
+	padding-bottom: 18px;
 }
