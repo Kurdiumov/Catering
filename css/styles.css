@@ -26,16 +26,35 @@
 		  
 #contact-row{
 	display:block;
-	border: 2px solid black;
 	min-height:100px;
 }
-#map{
-	display:block;
-	border: 2px solid orange;
-	min-height:300px;
+
+
+#map iframe{
+	margin-right:auto;
+	margin-left:auto;
 }
+
 #contact{
-	display:block;
-	border: 2px solid red;
-	min-height:400px;
+	border:1px solid black;
+	width: 250px;
+	height: 250px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 400px;
+	left: 50%;
+	margin-left: -125px;
+	z-index: 10;
+	text-align: center;
+	border-radius: 150px;
+	padding-top:30px;
+	font-family: Tahoma;
+	font-weight: 400;
+	font-size:20px;
+	color:#333;
+}
+
+#contact a{
+	text-decoration: none;
+	color:#333;
 }
