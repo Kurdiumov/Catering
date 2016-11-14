@@ -14,35 +14,37 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.scrollto.js'></script>
+     <script src='js/smooth-scrolling.js'></script>
 
   </head>
   <body>
 	  <div class="row">
 		  <div class="col-md-12">
-		  	<nav class="navbar navbar-default navbar-fixed-top " id="top" role="banner">	
+		  	<nav class="navbar navbar-default navbar-fixed-top " id="top nav-anchor" role="banner">	
 			  	<a href="#" class="navbar-brand">Brand</a>
 			  	<ul class="nav navbar-nav container"> 
-				  	<li class="active"> 	<a href="#">Home</a> 	</li> 
-				  	<li> 					<a href="#">Oferta</a>  	</li> 
-				  	<li> 					<a href="#">Galaria</a> 	</li>
-				  	<li> 					<a href="#">O firmie</a> 	</li>
-				  	<li> 					<a href="#">Naszi klienci</a> 	</li>
-				  	<li> 					<a href="#">Kontakt</a> 	</li>			  	
+				  	<li class="active"> 	<a href="#home">Home</a> 	</li> 
+				  	<li> 					<a href="#offer" id="offer-btn">Oferta</a>  	</li> 
+				  	<li> 					<a href="#gallery">Galeria</a> 	</li>
+				  	<li> 					<a href="#aboutUs">O firmie</a> 	</li>
+				  	<li> 					<a href="#clients">Naszi klienci</a> 	</li>
+				  	<li> 					<a href="#contact">Kontakt</a> 	</li>			  	
 			  	</ul> 
 			</nav>
 
-			<div id="home-row">
-			</div>
+			<section id="home">
+			</section>
 
-		  	<div id="offer-row">
+		  	<section id="offer">
 		  		<h1>Oferta</h1>
-		  	</div>	
+		  	</section>	
 
-		  	<div id="gallery-row">
+		  	<section id="gallery">
 		  		<h1>Galeria</h1>
-		  	</div>	
+		  	</section>	
 
-		  	<div id="aboutUs-row row">
+		  	<section id="aboutUs" class="row">
 		  		<h1>O nas</h1>
 		  		<div class="col-md-12">
 			  		<div class="col-md-4 col-md-offset-1">
@@ -64,13 +66,17 @@
 					</div>
 
 		  		</div>
-		  	</div>	
+		  	</section>	
 
-		  	<div id="contact-row">
+		  	<section id="clients">
+		  		<h1>Naszi klienci</h1>
+		  	</section>	
+
+		  	<div id="contact">
 		  		<div id="map pagination-centered text-center" align="middle">
 			  		<iframe src="http://mapbuildr.com/frame/20dsgv" frameborder="0" height="600" width="1350"></iframe>
 		  		</div>
-		  		<div id="contact">
+		  		<div id="contactInformation">
 		  			<span>
 				  		Łódź<br/>
 				  		Wólczańska 215<br/><br/>	
@@ -81,5 +87,7 @@
 	  			</div>	
   			</div>
   		</div>
+
+
   </body>
 </html>
