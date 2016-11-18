@@ -1,25 +1,24 @@
 #home{
 	margin-top:50px;
 	display:block;
-	min-height:590px;
-	background-image: url('../img/home.gif');
+
 }
 
 #offer{
 	display:block;
-	border: 2px solid red;
+
 	min-height:400px;
 }
 
 #gallery{
 	display:block;
-	border: 2px solid blue;
+
 	min-height:100px;
 }
 
 #aboutUs{
 	display:block;
-	border: 2px solid yellow;
+
 	min-height:100px;
 	background-color: #eee;
 }
@@ -90,3 +89,11 @@ h1{
 	color: #303539;
 	padding-bottom: 18px;
 }
+.bxslider {
+	padding-left:0px;
+}
+.bxslider img{
+	width:100%;
+}
+
+
