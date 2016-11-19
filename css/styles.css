@@ -26,6 +26,7 @@
 #contact{
 	display:block;
 	min-height:100px;
+	position: relative;
 }
 
 
