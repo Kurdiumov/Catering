@@ -1,3 +1,4 @@
+
 #home{
 	margin-top:50px;
 	display:block;
@@ -72,6 +73,33 @@
 	color:#333;
 }
 
+#footer{
+	background-color:#121212;
+	text-align: center;
+	color: #666;
+}
+
+#footer ul{
+	display: inline-block;
+	text-align: center;
+		margin-bottom: 5px;
+}
+
+#footer li{
+	white-space: nowrap;
+	margin-top:10px;
+	display:inline-block;
+	margin-left:10px;
+	margin-right: 10px;
+
+}
+
+#footer a, #footer a:hover, #footer a:visited{
+	list-style-type: none;
+	color:#666;
+	text-decoration: none;
+}
+
 h1{
 	text-align: center;
 	font-family: GaramondPremrPro-BdSubh;
@@ -79,14 +107,6 @@ h1{
 	color: #303539;
 }
 
-.description{
-	font-family: GothamPro;
-	font-size: 22px;
-	color: #303539;
-	padding: 29px 0 53px;
-	line-height: 34px;
-	letter-spacing: -.6px
-}
 
 .bxslider {
 	padding-left:0px;
@@ -96,12 +116,12 @@ h1{
 }
 
 .overlay {
-   background:transparent; 
    position:relative; 
    width:100%;
-   height:600px; /* your iframe height */
-   top:600px;  /* your iframe height */
-   margin-top:-600px;  /* your iframe height */
+   height:545px; /* your iframe height */
+   bottom:545;  /* your iframe height */
+   margin-top:-545px;  /* your iframe height */
+   background-color: transparent;
 }
 .crop {
     width: 100%;
