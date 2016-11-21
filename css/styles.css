@@ -54,7 +54,6 @@
 		  
 #contact{
 	display:block;
-	min-height:590px;
 	position: relative;
 }
 
@@ -62,22 +61,22 @@
 #map iframe{
 	margin-right:auto;
 	margin-left:auto;
-	height: 600px;
+	height: 525px;
 }
 
 #contactInformation{
 	border:1px solid black;
-	width: 250px;
-	height: 250px;
+	width: 275px;
+	height: 275px;
 	background-color: #fff;
 	position: absolute;
-	bottom: 400px;
+	bottom: 320px;
 	left: 50%;
 	margin-left: -125px;
 	z-index: 10;
 	text-align: center;
 	border-radius: 150px;
-	padding-top:30px;
+	padding-top:65px;
 	font-family: Tahoma;
 	font-weight: 400;
 	font-size:20px;
@@ -93,6 +92,7 @@
 	background-color:#121212;
 	text-align: center;
 	color: #666;
+	margin-top: -5px;
 }
 
 #footer ul{
@@ -133,12 +133,16 @@ h1{
 	width:100%;
 }
 
+#contact iframe{
+	width: 100%;
+	height:525px;
+}
 .overlay {
    position:relative; 
    width:100%;
-   height:545px; /* your iframe height */
-   bottom:545;  /* your iframe height */
-   margin-top:-545px;  /* your iframe height */
+   height:525px; /* your iframe height */
+   bottom:525;  /* your iframe height */
+   margin-top:-525px;  /* your iframe height */
    background-color: transparent;
 }
 .crop {
@@ -188,3 +192,4 @@ h1{
 .afterAboutUs{
 	bottom: -380px;
 }
+
