@@ -7,26 +7,22 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Catering</title>
 
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
-    <!-- Important Owl stylesheet -->
 	<link rel="stylesheet" href="css/owl.carousel.css"> 
-	<!-- Default Theme -->
-	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.theme.css">	 	
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
     <script src="js/jquery-3.1.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src='js/jquery.scrollto.js'></script>
     <script src='js/smooth-scrolling.js'></script>
     <script src="js/owl.carousel.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.scrollify.js"></script>
 
 	</head>
-	<body>
+	<body>	
   		<div class="container">
   			<nav class="navbar navbar-default navbar-fixed-top center" id="top nav-anchor" role="banner">	
 	  			<div class="navbar-inner">  	
@@ -43,7 +39,7 @@
 		</div>
 
   		<section id="home">
-			<ul class="bxslider crop">
+			<ul class="bxslider crop" >
 		    	<li> <img src="img/slide1.jpg"/> </li>
 		    	<li> <img src="img/slide2.jpg"/> </li>
 		    	<li> <img src="img/slide3.jpg"/> </li>
@@ -54,7 +50,6 @@
 	   			<img  src="img/logo.png"/>
 	   			<div id="gradient" class="afterLogo"></div>
 	   		</div>
-
 		</section>
 
 		
@@ -71,10 +66,12 @@
 			<div id="gradient" class="afterGallery"></div>
 		</section>	
 
-		<section id="aboutUs" >
+
+		<section id="aboutUs">
 		 	<h1>O nas</h1>
 			<div id="gradient" class="afterAboutUs"></div>
 		</section>
+
 
 		<section id="clients">
 			<h1>Naszi klienci</h1>
@@ -99,13 +96,14 @@
 		  	</div>	  
 	  	</section>	
 
-	  	<section id="footer">
+
+	  	<div id="footer">
 	  		<ul>
 				<li><a href="http://facebook.com">Facebook</a></li>
 				<li><a href="http://instagram.com">Instagram</a></li>
 				<li><a href="http://twitter.com">Twitter</a></li>
 			</ul>
-		</section>	
+		</div>	
   		<script>
 			$('.bxslider').bxSlider({
 			  	auto: true,
@@ -113,7 +111,15 @@
 	  			mode: 'fade',
 	  			speed: 4000,
 	  			pager: false
-			});			  	
+			});			
+
+			$.scrollify({
+				section : "section",
+				scrollSpeed: 2100,
+				offset : -50,
+				scrollbars: true,
+				standardScrollElements: "",
+			});	
   		</script>
   </body>
 </html>
