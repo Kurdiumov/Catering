@@ -1,9 +1,15 @@
+body{
+	background-color: #121212;
+}
 
+.offset{
+	min-height: 50px;
+	background-color: #121212;
+}
 #home{
-	margin-top:50px;
 	display:block;
 	position: relative;
-	height: 590px;
+	height: 640px;
 }
 
 .logo{
@@ -182,7 +188,7 @@ h1{
 	position: relative;
 }
 .afterLogo{
-	bottom: -50px;
+	bottom: -100px;
 }
 
 .afterOffer{
