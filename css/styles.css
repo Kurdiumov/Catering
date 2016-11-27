@@ -32,11 +32,17 @@ body{
 	background-position: center center;
 	background-size: cover;
 }
-
+.nanoGalleryThumbnailContainer{
+	z-index: 1000;
+	margin-left:25px;
+	margin-right:25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 #gallery{
 	display:block;
-	min-height:590px;
+	height:590px;
 	background-image: url("../img/gray.jpg");
 	background-position: center center;
 	background-size: cover;
@@ -196,7 +202,7 @@ h1{
 }
 
 .afterGallery{
-	bottom: -375px;
+	bottom: 100px;
 }
 
 .afterAboutUs{
@@ -218,10 +224,18 @@ h1{
 
 #ContactUsModal .close {
     color: #D3D3D3; 
- opacity:0.5;
+ 	opacity:0.5;
 }
 
 #ContactUsModal form{
 	max-width: 80%;
 	margin: auto;
+}
+
+
+#gallery h1{
+	padding-top: 20px;	
+}
+.labelImageTitle, .labelImageDescription, .labelImage{
+	visibility: hidden;
 }

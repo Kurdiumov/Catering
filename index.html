@@ -11,7 +11,8 @@
     <link href="css/styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/owl.carousel.css"> 
 	<link rel="stylesheet" href="css/owl.theme.css">	 	
-	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
+  	<link href="css/nanogallery.min.css" rel="stylesheet" type="text/css">
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -20,6 +21,7 @@
     <script src="js/owl.carousel.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.scrollify.js"></script>
+	<script src="js/jquery.nanogallery.min.js"></script>
 
 	</head>
 	<body>
@@ -66,6 +68,7 @@
 
 		<section id="gallery">
 			<h1>Galeria</h1>
+			<div id="nanoGallery"></div>
 			<div id="gradient" class="afterGallery"></div>
 		</section>	
 
@@ -165,6 +168,39 @@
 				standardScrollElements: "",
 				setHeights: false,
 			});	
+
+			  $(document).ready(function () {
+			    $("#nanoGallery").nanoGallery({
+			        thumbnailWidth:240,thumbnailHeight:190,colorScheme:'dark',
+			        items: [
+			            {	
+			            	src: 'img/Gallery/1.jpg', srct: 'img/Gallery/1.jpg'
+			            },
+			            {	
+			            	src: 'img/Gallery/2.jpg', srct: 'img/Gallery/2.jpg'
+			            },
+			            {	
+			            	src: 'img/Gallery/3.jpg', srct: 'img/Gallery/3.jpg'
+			            },
+			            {	
+			            	src: 'img/Gallery/4.jpg', srct: 'img/Gallery/4.jpg'
+			            },
+			            {	
+			            	src: 'img/Gallery/5.jpg', srct: 'img/Gallery/5.jpg'
+			            },
+			            {	
+			            	src: 'img/Gallery/6.jpg', srct: 'img/Gallery/6.jpg'
+			            },
+			            {	
+			            	src: 'img/Gallery/7.jpg', srct: 'img/Gallery/7.jpg'
+			            },
+			            {	
+			            	src: 'img/Gallery/8.jpg', srct: 'img/Gallery/8.jpg'
+			            },	          
+
+			        ]
+			    });
+			  });
   		</script>
   </body>
 </html>
