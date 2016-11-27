@@ -17,7 +17,7 @@
 .logo img{
 	display: block;
     margin: auto;
-    width:500px;
+    width:375px;
 }
 #offer{	
 	display:block;
@@ -182,7 +182,7 @@ h1{
 	position: relative;
 }
 .afterLogo{
-	bottom: -150px;
+	bottom: -50px;
 }
 
 .afterOffer{
