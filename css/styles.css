@@ -1,5 +1,6 @@
 body{
 	background-color: #121212;
+		font-family: Helvetica;
 }
 
 .offset{
@@ -205,11 +206,11 @@ h1{
 }
 
 .afterGallery{
-	bottom: 16vh;
+	bottom: 18vh;
 }
 
 .afterAboutUs{
-	bottom: -60vh;
+	bottom: 7vh;
 }
 
 
@@ -239,6 +240,23 @@ h1{
 #gallery h1{
 	padding-top: 6vh;	
 }
+
+ #aboutUs h1{
+ 	padding-top: 2vh;
+ }
 .labelImageTitle, .labelImageDescription, .labelImage{
 	visibility: hidden;
+}
+
+#aboutUs .content{
+	width: 55%;
+	background-color: rgba(1,1,1, 0.4);
+	margin: auto;
+	padding: 20px;
+	color: white;
+	font-family: Georgia, Serif;
+
+	font-weight: 400;
+	font-size:16px;
+	border-radius: 20px;
 }
