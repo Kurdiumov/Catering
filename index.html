@@ -22,7 +22,7 @@
 	<script src="js/jquery.scrollify.js"></script>
 
 	</head>
-	<body>	
+	<body>
   		<div class="container">
   			<nav class="navbar navbar-default navbar-fixed-top center" id="top nav-anchor" role="banner">	
 	  			<div class="navbar-inner">  	
@@ -32,7 +32,8 @@
 					  	<li> <a href="#gallery">Galeria</a> 	</li>
 					  	<li> <a href="#aboutUs">O firmie</a> 	</li>
 					  	<li> <a href="#clients">Naszi klienci</a> 	</li>
-					  	<li> <a href="#contact">Kontakt</a> 	</li>		  	
+					  	<li> <a href="#contact">Kontakt</a> 	</li>	
+					  	<li> <a href="#contact" data-toggle="modal" data-target="#ContactUsModal"> Napisz do nas</a> 	</li>	  	
 				  	</ul> 
 			  	</div>
 			</nav>
@@ -91,10 +92,47 @@
 					Wólczańska 215<br/>	
 					<b>catering@lodz.com<br/>
 					202-555-0106</b><br/>
-					<a href="#">Napisz do nas</a>
+					
+					<!-- Trigger the modal with a button -->
+					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#ContactUsModal">Napisz do nas</button>
 				</span>
 		  	</div>	  
 	  	</section>	
+	  	<!-- Modal -->
+<div class="modal fade" id="ContactUsModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+        		<h4 class="modal-title">Napisz do nas</h4>
+      		</div>
+			<form action="https://www.enformed.io/ue5ki8qg" method="POST" class="form-horizontal target="_blank"">            
+		      	<div class="form-group">
+				  <label>Imię</label>
+				  <input name="first_name" type="text" class="form-control" required="true"/>
+				</div>
+
+				<div class="form-group">
+				  <label>Email</label>
+				  <input name="email" type="text" class="form-control" required="true"/>
+				</div>
+
+				<div class="form-group">
+				  <label>Wiadomość</label>
+				  <textarea name="message" type="text" class="form-control" required="true"/></textarea>
+				</div>
+	      		<div class="modal-footer">
+		            <button type="button" class="btn btn-black" data-dismiss="modal">Zamknij</button>
+		            <button type="submit" class="btn btn-black" id="submit">Wyslij</button>
+	      		</div>
+					<input type="hidden" name="*redirect" value="https://kurdiumov.github.io/#6" />
+            
+	      	</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 	  	<div id="footer">
@@ -104,6 +142,10 @@
 				<li><a href="http://twitter.com">Twitter</a></li>
 			</ul>
 		</div>	
+
+
+
+
   		<script>
 			$('.bxslider').bxSlider({
 			  	auto: true,

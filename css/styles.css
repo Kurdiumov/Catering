@@ -56,7 +56,11 @@
 	display:block;
 	position: relative;
 }
-
+#contact .btn, .btn-black{
+	color:#666;
+	background-color: #121212;
+	margin-top:10px;
+}
 
 #map iframe{
 	margin-right:auto;
@@ -193,3 +197,25 @@ h1{
 	bottom: -380px;
 }
 
+
+
+#ContactUsModal .modal-content{
+	background-color: #121212;
+	color:#D3D3D3;
+}
+#ContactUsModal .modal-header{
+	border-bottom: 1px solid #1b1717;
+}
+#ContactUsModal .modal-footer{
+	border-top: 1px solid #1b1717;
+}
+
+#ContactUsModal .close {
+    color: #D3D3D3; 
+ opacity:0.5;
+}
+
+#ContactUsModal form{
+	max-width: 80%;
+	margin: auto;
+}
