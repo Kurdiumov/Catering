@@ -87,7 +87,7 @@ body{
 	height: 35vh;
 	background-color: #fff;
 	position: absolute;
-	bottom: 55vh;
+	bottom: 48vh;
 	left: 50%;
 	margin-left: -125px;
 	z-index: 10;
@@ -114,6 +114,7 @@ body{
 	text-align: center;
 	color: #666;
 	margin-top: -5px;
+	margin-bottom: 50px;
 }
 
 #footer ul{
@@ -155,14 +156,14 @@ h1{
 
 #contact iframe{
 	width: 100%;
-	height:86vh;
+	height:80vh;
 }
 .overlay {
    position:relative; 
    width:100%;
-   height:86vh; /* your iframe height */
-   bottom:525;  /* your iframe height */
-   margin-top:-86vh;  /* your iframe height */
+   height:80vh; /* your iframe height */
+   bottom:80vh;  /* your iframe height */
+   margin-top:-80vh;  /* your iframe height */
    background-color: transparent;
 }
 .crop {
@@ -191,29 +192,20 @@ h1{
 }
 
 #gradient{
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-	min-height: 33vh;
+	min-height: 5vh;
 	width:100%;
 	z-index: 500;
-	position: relative;
-}
-.afterLogo{
-	bottom: -12vh;
-}
+	position: fixed;
 
-.afterOffer{
-	bottom: -61vh;
 }
-
-.afterGallery{
-	bottom: 18vh;
+.gradientTop{
+	background: linear-gradient(to bottom, rgba(18,18,18,1) 50%,rgba(18,18,18,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	margin-top: 8vh;
 }
-
-.afterAboutUs{
-	bottom: 7vh;
+.gradientBottom{
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	bottom: 0px;
 }
-
-
 
 #ContactUsModal .modal-content{
 	background-color: #121212;
@@ -254,7 +246,7 @@ h1{
 	margin: auto;
 	padding: 20px;
 	color: white;
-	font-family: Georgia, Serif;
+
 
 	font-weight: 400;
 	font-size:16px;
