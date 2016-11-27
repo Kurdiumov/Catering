@@ -3,13 +3,13 @@ body{
 }
 
 .offset{
-	min-height: 50px;
+	min-height: 8.6vh;
 	background-color: #121212;
 }
 #home{
 	display:block;
 	position: relative;
-	height: 640px;
+	height: 100vh;
 }
 
 .logo{
@@ -17,7 +17,7 @@ body{
 	width:100%;
 	position: absolute;
 	z-index:10;
-	top:60px;
+	top:14.4vh;
 }
 
 .logo img{
@@ -27,7 +27,7 @@ body{
 }
 #offer{	
 	display:block;
-	min-height:590px;
+	height: 92vh;
 	background-image: url("../img/wood.jpg");
 	background-position: center center;
 	background-size: cover;
@@ -42,7 +42,7 @@ body{
 
 #gallery{
 	display:block;
-	height:590px;
+	height: 92vh;
 	background-image: url("../img/gray.jpg");
 	background-position: center center;
 	background-size: cover;
@@ -50,7 +50,7 @@ body{
 
 #aboutUs{
 	display:block;
-	min-height:590px;
+	height: 92vh;
 	background-image: url("../img/back.jpg");
 	background-position: center center;
 	background-size: cover;
@@ -58,7 +58,7 @@ body{
 
 #clients{
 	display:block;
-	min-height:590px;
+	height: 100vh;
 	background-image: url("../img/brick.jpg");
 	background-position: center center;
 	background-size: cover;
@@ -77,16 +77,16 @@ body{
 #map iframe{
 	margin-right:auto;
 	margin-left:auto;
-	height: 525px;
+	height: 100vh;
 }
 
 #contactInformation{
 	border:1px solid black;
 	width: 275px;
-	height: 275px;
+	height: 40vh;
 	background-color: #fff;
 	position: absolute;
-	bottom: 320px;
+	bottom: 50vh;
 	left: 50%;
 	margin-left: -125px;
 	z-index: 10;
@@ -143,7 +143,7 @@ h1{
 
 
 .bxslider {
-	padding-left:0px;
+	padding-left:0vh;
 }
 .bxslider img{
 	width:100%;
@@ -151,19 +151,19 @@ h1{
 
 #contact iframe{
 	width: 100%;
-	height:525px;
+	height:85vh;
 }
 .overlay {
    position:relative; 
    width:100%;
-   height:525px; /* your iframe height */
+   height:87vh; /* your iframe height */
    bottom:525;  /* your iframe height */
-   margin-top:-525px;  /* your iframe height */
+   margin-top:-87vh;  /* your iframe height */
    background-color: transparent;
 }
 .crop {
     width: 100%;
-    height: 590px;
+    height: 92.5vh;
     overflow: hidden;
 }
 .navbar, .navbar-default, .navbar-fixed-top{
@@ -188,25 +188,25 @@ h1{
 
 #gradient{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-	min-height: 200px;
+	min-height: 33vh;
 	width:100%;
 	z-index: 500;
 	position: relative;
 }
 .afterLogo{
-	bottom: -100px;
+	bottom: -12vh;
 }
 
 .afterOffer{
-	bottom: -380px;
+	bottom: -61vh;
 }
 
 .afterGallery{
-	bottom: 100px;
+	bottom: 16vh;
 }
 
 .afterAboutUs{
-	bottom: -380px;
+	bottom: -60vh;
 }
 
 
@@ -234,7 +234,7 @@ h1{
 
 
 #gallery h1{
-	padding-top: 20px;	
+	padding-top: 6vh;	
 }
 .labelImageTitle, .labelImageDescription, .labelImage{
 	visibility: hidden;
