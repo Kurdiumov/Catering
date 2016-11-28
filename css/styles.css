@@ -1,6 +1,7 @@
 body{
 	background-color: #121212;
-		font-family: Helvetica;
+  	overflow-x: hidden;
+	font-family: Helvetica;
 }
 
 .offset{
@@ -344,4 +345,49 @@ h1{
 
 .rigthControl{
 	left:88vw;
+}
+
+.modalMenu{
+	margin-top: 120px;
+	color:#D3D3D3;
+
+}
+
+.modalMenu .modal-content{
+
+	background-color: #121212;
+	border-radius: 20px;
+	padding: 5px;
+	padding-right:  15px;
+	height: 50vh;
+
+}
+.menuContent{
+	padding: 30px;
+	padding-top: 10px;
+}
+
+.menuImg, .menuText{
+	display: inline-block;
+	height: 37vh;
+}
+
+.menuImg{
+	float: left;
+	width: 30%;
+}
+
+.menuImg img{
+	width: 100%;
+	margin:auto;
+	margin-top: 50px;
+}
+.menuText h2{
+	padding-top: -100px;
+}
+.menuText{
+	text-align: left;
+	float: right;
+	width: 70%;
+	padding: 15px;
 }
