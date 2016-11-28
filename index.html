@@ -61,7 +61,101 @@
 
 		<section id="offer">
 			<h1>Oferta</h1>
-			
+			<div class="Slider">
+				<img src="img/left.png" class="leftControl"/>
+				<img src="img/rigth.png" class="rigthControl"/>
+				<ul class="offerSlider">
+					
+					<li class="offerElement"> 
+						<a href="">
+							<img src="img/menu.png"/>
+						</a>
+						<h4>Title</h4>
+						<h5>Short description</h5>
+						<a href="">
+							<button class="btn btn-black">Show menu</button>
+						</a>
+					</li>
+
+					<li class="offerElement"> 
+						<a href="">
+							<img src="img/menu.png"/>
+						</a>
+						<h4>Title</h4>
+						<h5>Short description</h5>
+						<a href="">
+							<button class="btn btn-black">Show menu</button>
+						</a>
+					</li>
+
+					<li class="offerElement"> 
+						<a href="">
+							<img src="img/menu.png"/>
+						</a>
+						<h4>Title</h4>
+						<h5>Short description</h5>
+						<a href="">
+							<button class="btn btn-black">Show menu</button>
+						</a>
+					</li>
+
+					<li class="offerElement"> 
+						<a href="">
+							<img src="img/menu.png"/>
+						</a>
+						<h4>Title</h4>
+						<h5>Short description</h5>
+						<a href="">
+							<button class="btn btn-black">Show menu</button>
+						</a>
+					</li>
+
+					<li class="offerElement"> 
+						<a href="">
+							<img src="img/menu.png"/>
+						</a>
+						<h4>Title</h4>
+						<h5>Short description</h5>
+						<a href="">
+							<button class="btn btn-black">Show menu</button>
+						</a>
+					</li>
+
+					<li class="offerElement"> 
+						<a href="">
+							<img src="img/menu.png"/>
+						</a>
+						<h4>Title</h4>
+						<h5>Short description</h5>
+						<a href="">
+							<button class="btn btn-black">Show menu</button>
+						</a>
+					</li>
+
+					<li class="offerElement"> 
+						<a href="">
+							<img src="img/menu.png"/>
+						</a>
+						<h4>Title</h4>
+						<h5>Short description</h5>
+						<a href="">
+							<button class="btn btn-black">Show menu</button>
+						</a>
+					</li>
+
+					<li class="offerElement"> 
+						<a href="">
+							<img src="img/menu.png"/>
+						</a>
+						<h4>Title</h4>
+						<h5>Short description</h5>
+						<a href="">
+							<button class="btn btn-black">Show menu</button>
+						</a>
+					</li>
+				</ul>
+
+			</div>
 		</section>	
 		
 		
@@ -183,25 +277,51 @@
 		</div><!-- /.modal -->	
 
   		<script>
-			$('.bxslider').bxSlider({
-			  	auto: true,
-	  			autoControls: true,
-	  			mode: 'fade',
-	  			speed: 4000,
-	  			pager: false
-			});			
+  			var sliderMenu;
+  			$(document).ready(function () {
+				$('.bxslider').bxSlider({
+				  	auto: true,
+		  			autoControls: true,
+		  			mode: 'fade',
+		  			speed: 4000,
+		  			pager: false
+				});			
 
-			$.scrollify({
-				section : "section",
-				scrollSpeed: 2100,
-				offset: -50,
-				scrollbars: true,
-				standardScrollElements: "",
-				setHeights: false,
-			});	
+				$.scrollify({
+					section : "section",
+					scrollSpeed: 2100,
+					offset: -50,
+					scrollbars: true,
+					standardScrollElements: "",
+					setHeights: false,
+				});	
 
-			  $(document).ready(function () {
-			    $("#nanoGallery").nanoGallery({
+
+			  	  sliderMenu = $('.offerSlider').bxSlider({
+				  minSlides: 4,
+				  maxSlides: 4,
+				  slideWidth: 200,
+				  slideMargin: 75,
+				  autoControls: true,
+				  auto: true,
+
+				});
+
+
+				$( ".offerSlider" ).mouseover(function() {				  
+				  sliderMenu.stopAuto();
+				});
+
+				$( ".offerSlider" ).mouseleave(function() {
+				  sliderMenu.startAuto();
+				});
+				$(".leftControl").click(function() {				  
+				  sliderMenu.goToPrevSlide();
+				});
+				$( ".rigthControl" ).click(function() {				  
+				  sliderMenu.goToNextSlide();
+				});
+				$("#nanoGallery").nanoGallery({
 			        thumbnailWidth:240,thumbnailHeight:190,colorScheme:'dark',
 			        items: [
 			            {	

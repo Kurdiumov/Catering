@@ -27,6 +27,7 @@ body{
     width:375px;
 }
 #offer{	
+	text-align: center;
 	display:block;
 	height: 92vh;
 	background-image: url("../img/wood.jpg");
@@ -292,4 +293,55 @@ h1{
 }
 .modal-open {
     overflow-y: scroll;
+}
+
+.Slider{
+	display: inline-block;
+	margin:50px auto;
+	color:#D3D3D3;
+}
+.offerElement{
+	width: 200px;
+	height: 320px;
+	background-color: rgba(1,1,1,0.4);
+	display:inline-block;
+	border-radius: 10px;
+}
+
+.offerElement img{
+	margin:auto;
+	margin-top: 8px;
+	width: 190px;
+	height: 190px;
+	border-radius: 10px;
+}
+
+.Slider .bx-pager-item{
+	margin-left: 10px;
+}
+
+.Slider .bx-pager{
+	width:50px;
+	margin:auto;
+	text-align: center;
+	right:-20vw;
+}
+
+.Slider .btn{
+	color: #d3d3d3;
+	font-size: 17px;
+}
+.leftControl, .rigthControl{
+	width:35px;
+	height: 35px;
+	display: inline-block;
+	position: absolute;
+	bottom: -50vh;
+}
+.leftControl{
+	left:8.5vw;
+}
+
+.rigthControl{
+	left:88vw;
 }
