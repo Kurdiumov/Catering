@@ -178,6 +178,7 @@ h1{
 .navbar, .navbar-default, .navbar-fixed-top{
 	background-color: #121212;
 	border:none;
+	height: 6vh;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:active, .navbar-default .navbar-nav > .active > a:link, .navbar-default .navbar-nav > .active > a:visited{
@@ -204,10 +205,10 @@ h1{
 }
 .gradientTop{
 	background: linear-gradient(to bottom, rgba(18,18,18,1) 50%,rgba(18,18,18,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	margin-top: 8vh;
+	margin-top: 6vh;
 }
 .gradientBottom{
-	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	bottom: 0px;
 }
 
@@ -240,16 +241,16 @@ h1{
 }
 
  #aboutUs h1{
- 	padding-top: 2vh;
+ 	padding-top: 1em;
  }
 .labelImageTitle, .labelImageDescription, .labelImage{
 	visibility: hidden;
 }
 
 #aboutUs .content{
-	width: 55%;
+	width: 55em;
 	background-color: rgba(1,1,1, 0.4);
-	margin: auto;
+	margin: 2em auto;
 	padding: 20px;
 	color: white;
 
@@ -283,10 +284,10 @@ h1{
 }
 
 #clients .content{
-	width: 80%;
+	display:block;
 	height: 50%;
 	margin: auto;
-
+	text-align: center;
 	margin-top: 10vh;
 	-webkit-align-content: center;
     align-content: center;
@@ -297,9 +298,10 @@ h1{
 }
 
 .Slider{
+	margin-top: 5em;
 	display: inline-block;
-	margin:50px auto;
 	color:#D3D3D3;
+
 }
 .offerElement{
 	width: 200px;
@@ -316,7 +318,6 @@ h1{
 	height: 190px;
 	border-radius: 10px;
 }
-
 .Slider .bx-pager-item{
 	margin-left: 10px;
 }
@@ -336,16 +337,19 @@ h1{
 	width:35px;
 	height: 35px;
 	display: inline-block;
-	position: absolute;
-	bottom: -50vh;
+	position: relative;
+	margin-top: 10em;
 }
 .leftControl{
-	left:8.5vw;
+	margin-left: -50px;
+	float:left;
 }
 
 .rigthControl{
-	left:88vw;
+	margin-right:  -50px;
+	float: right;
 }
+
 
 .modalMenu{
 	margin-top: 120px;
@@ -403,3 +407,5 @@ h1{
 	margin-top: 20px;
 	margin-right: 5px;
 }
+
+
